@@ -15,7 +15,7 @@
 
 <!-- include alertify script -->
 <script src="alertify.js-0.3.11/lib/alertify.min.js"></script>
-<title>笔墨相处啊</title>
+<title>笔墨相传</title>
 <style type="text/css">
 body{
 	background-image:url(picture/6.jpg);

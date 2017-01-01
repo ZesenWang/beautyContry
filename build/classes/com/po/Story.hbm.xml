@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-19 20:49:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.po.Story" table="STORY">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="header" type="java.lang.String">
+            <column name="HEADER" />
+        </property>
+        <property name="profile" type="java.lang.String">
+            <column name="PROFILE" />
+        </property>
+        <property name="imagePath" type="java.lang.String">
+            <column name="IMAGEPATH" />
+        </property>
+        <property name="fullStory" type="java.lang.String">
+            <column name="FULLSTORY" />
+        </property>
+    </class>
+</hibernate-mapping>
