@@ -107,7 +107,7 @@ $(function (){
 
 <!--详细内容页面开始-->
 <div class=" col-sm-12 col-sm-offset-2 col-xs-12">
-    <div class="page-header left col-sm-8 col-xs-12" style="margin-top:10%;">
+    <div class="page-header left col-sm-8 col-xs-12" style="margin-top:15px;">
       <small style="color: #333;font-size:20px;">我的临安 <h1  style="color:#000;">     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=objects[1].toString()%></h1></small>
     </div>
 <!--详细内容页面结束-->
@@ -258,7 +258,7 @@ $(function (){
 </div><!-- /.modal -->
 <!--编辑内容模态框结束-->
 
-
+<p><button type="button" class="btn btn-primary" style="text-indent:0px;opacity:0.8;filter:alpha(opacity=40);">返回</button></p>
 <!-- 我要留言模态框Modal开始 -->
 <div class="modal fade" id="myAddMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

@@ -39,9 +39,9 @@ body{
 <!-- 导航条 结束-->
 
 <!--好书分享大标题开始-->
- <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:10%;">
+ <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:15px;">
       <h1 style="color:#000;">这个小镇，落日沉重</h1>
-      <p style="text-indent:80px;"><small style="color: #333;font-size:20px;">临安的景点特点简介，点击查看详细内容</small>
+      <p style="text-indent:80px;"><small style="color: #333;font-size:20px;">临安简介，点击查看详细内容</small>
       </p>
 </div>
 <!--好书分享大标题结束-->

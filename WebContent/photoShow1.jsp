@@ -40,7 +40,7 @@ body{
     position: relative;
     padding: 1px;
     margin-bottom: 36px;
-    border: 2px solid #ff6765;
+    border: 2px solid #999;
 	background-color: #CCC;
 }
 .p1_box a.bot {
@@ -124,25 +124,6 @@ border-color: transparent #ff6360 transparent transparent;
     background-color: #ff6360;
 }
 
-.type{
-    position: absolute;
-    display: block;
-    width: 52px;
-    left: 47px;
-    top: -2px;
-    z-index: 20;
-    height: 39px;
-    background: url(picture/photo_icon.png) center 8px no-repeat #fff;
-    box-shadow: 0 5px 5px rgba(0,0,0,1)
-}
-
-
-.bot {
-    background-color: #000;
-    border-color: #F00;
-}
-
-
 
 .box{
 		text-align: center;
@@ -210,7 +191,7 @@ border-color: transparent #ff6360 transparent transparent;
 <!-- 导航条 结束-->
 
 <!--相册首页大标题开始-->
-<div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:10%;">
+<div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:15px;">
   <h1 style="color:#000;">相册集合地</h1>
       <p style="text-indent:80px;"><small style="color: #333;font-size:20px;">美景是用来欣赏的，这里有你家乡的美景嘛~~</small>
       <button type="button" class="btn btn-primary" style="text-indent:0px;opacity:0.8;
@@ -229,15 +210,15 @@ filter:alpha(opacity=40);"id="uploadPhone">点击上传你的分享</button>
             Picture picture = (Picture) list.get(i);
     %>
   <div class="col-sm-12 col-md-5 col-sm-offset-1 p1_box">
+  	<a href="detailPicture.action?reqGallery=<%=picture.getId()%>&reqPage=0">
   	<div class="box">
-  		<div class="type"></div>
-  			<img src="<%=picture%>" class="img-responsive" alt="Responsive image" style="height:250px; width:100%;">
+  		<img src="<%=picture%>" class="img-responsive" alt="Responsive image" style="height:250px; width:100%;">
   		<div class="box-content">
 		<h3 class="title"><%=picture.getTouristSpot()%></h3>
 		<span class="post"><%=picture.getProfile()%></span>
         </div>
      </div>
-  <a href="detailPicture.action?reqGallery=<%=picture.getId()%>&reqPage=0" class="bot"><%=picture.getTouristSpot()%><span>7 <br>images</span></a>
+  </a>
   </div>
     <%
         }

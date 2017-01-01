@@ -92,9 +92,9 @@ function openMissPWD(){
           </ul>
         </li>  -->      
         <li><a href="viewContent.action?curPage=0">指点山深处</a></li>
-        <li><a href="viewPicture.action?curPage=0">风景旧曾谙</a></li>
         <li><a href="viewBook.action?curPage=0">笔墨相传</a></li>
         <li><a href="viewAudio.action?curPage=0">丝竹人语声</a></li>
+        <li><a href="viewPicture.action?curPage=0">风景旧曾谙</a></li>
         <li><a href="viewStory.action?curPage=0">寒灯纸上书</a></li>
         <li><a href="About Us.jsp">关于我们</a></li>
         <li name="submission" id="submission" style="display: none;" ><a href="">来件管理</a></li>
