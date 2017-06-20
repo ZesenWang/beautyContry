@@ -1,0 +1,96 @@
+*********CSS reset ***********/
+*{margin:0;padding:0;}
+ul,li,ol{ list-style:none;}
+img,a img{ border:none;}
+table{ border-collapse:collapse; border-spacing:0;}
+em,i,u{ font-style:normal;}
+body{font-size:12px; font-family:"宋体";color:#434343;}
+.clear{clear:both;  font-size:0; overflow:hidden; height:0;}
+.blank10{clear:both;  font-size:0; overflow:hidden; height:10px;}
+.blank{clear:both;  font-size:0; overflow:hidden; height:10px; background:#FFF;}
+/*********content css定义***********/
+#content{width:960px;margin:0 auto;}
+#footer{padding-bottom:0;margin:0px auto 0;}
+/*********main css定义***********/
+.mb15 {margin-bottom: 0px;}
+#main{width:960px; margin:6px auto 10px; overflow:hidden;}
+
+
+
+/*********图片切换 css定义***********/
+.sub_box{width:738px; height:350px; float:left; position:relative; overflow:hidden; border:1px solid #cccccc;}
+.sub_box img{border:none; width:738px; height:350px;}
+#bd1lfimg{position:relative; width:738px; height:350px; overflow:hidden;}
+#bd1lfimg div{width:100000px; margin-left:-4px;}
+#bd1lfimg dl{width:738px; height:350px; position:relative; overflow:hidden; float:left;}
+#bd1lfimg dt{width:738px; height:350px; position:absolute; left:0px; top:0px;}
+
+.sub_nav{width:738px; height:25px; bottom:0px; position:absolute; color:#999999; z-index:200;}
+.sub_no{height:25px; float:right;}
+.sub_no li{display:block; width:25px; height:25px; float:left; overflow:hidden; line-height:25px; vertical-align:middle; text-align:center; background:#FFBC00; filter:alpha(Opacity=70); Opacity:0.7; font-family:Arial; font-size:11px; color:#fff; cursor:pointer;}
+.sub_no li.show{background:#FFFFFF; color:#000000;}
+.sub_more{float:right; width:50px; height:25px; background:#000000; filter:alpha(Opacity=70); Opacity:0.7; color:#999999; text-align:center; line-height:25px;}
+
+/*********图片切换 css定义***********/
+
+img {
+	border:0px
+}
+
+#select_title {
+	float: left;
+	width:698px;
+	margin: 10px 20px 0px 20px;
+}
+
+#select_product {
+	float: left;
+	width:205px;
+	margin: 20px 20px 10px 20px;
+}
+
+
+#select_img {
+	float: left;
+	width:205px;
+	height:154px;
+}
+
+#select_img a:hover {
+	border:1px #fff solid; 
+}
+
+
+#select_about {
+	float: left;
+	text-align:center; 
+	width:205px;
+	line-height:18px;
+	color:#7F7F7F;
+	margin: 8px 0 0 0;
+}
+
+/*超链接样式*/
+.a:link {
+	font-size:13px;
+	color:#7F7F7F;
+	text-decoration:none;
+}
+.a:visited {
+	font-size:13px;
+	color:#7F7F7F;
+	text-decoration:none;
+}
+.a:hover {
+	font-size:13px;
+	color:#7F7F7F;
+	text-decoration:none;
+}
+.a:actived {
+	font-size:13px;
+	color:#7F7F7F;
+	text-decoration:none;
+}
+
+.divBorder{border:0px solid #CCCCCC; float: left; width:736px}
+hr {border-top:1px dashed #CCCCCC; }

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-19 21:22:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.po.Picture" table="Gallery">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="coverImage" type="java.lang.String">
+            <column name="COVERIMAGE" />
+        </property>
+        <property name="touristSpot" type="java.lang.String">
+            <column name="TOURISTSPOT" />
+        </property>
+        <property name="profile" type="java.lang.String">
+            <column name="PROFILE" />
+        </property>
+    </class>
+</hibernate-mapping>

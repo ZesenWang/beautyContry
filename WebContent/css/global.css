@@ -1,0 +1,405 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+img {
+	border:0px   /*IE下消除图片链接的边框*/
+}
+
+body {
+	background-color: white;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:13px;
+	text-align:center;
+	background-image:url(../images/top_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+#page {
+	width: 950px;
+	margin: 0 auto 2px auto;
+	text-align:left;
+}
+
+#header {
+	float: center;
+	width:950px;
+	height:150px;
+}
+
+#logo {
+	float: left;
+	width:400;
+	height:120;
+}
+
+#header_right {
+	float: right;
+	font-size:12px;
+	color:#333333;
+	text-align: right;
+	margin-top:3em;
+}
+/* 主导航 */
+#headermenu {
+	float: left;
+	width:600px;
+	text-align:center;
+}
+
+#search {
+	float: right;
+	text-align:right;
+	width:350px;
+}
+
+#menu {	
+	list-style-type:none;
+}
+
+#left_column {
+	float: left;
+	width:190px;
+	padding-top: 15px;
+	padding-right: 22px;
+	padding-left:0px;
+}
+
+#left_login {
+	float: left;
+	width:182px;
+	text-align:center; 
+	margin: 0 auto 10px auto;
+}
+
+#left_sort {
+	float: left;
+	width:182px;
+	text-align:center; 
+	margin: 0 auto 10px auto;
+}
+
+#sort_menu {
+	text-align:left;
+	line-height:35px;
+	margin: 0 10px 0 10px;
+}
+
+#center_column {
+	float: right;
+	width: 738px;
+	margin: 15px 0 0px 0;
+}
+
+#footer {
+	margin:auto; padding:10px 0;
+	clear: both;
+	text-align:center;
+	background-image:url('../images/bottom_bg.jpg');
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+/*用户注册模块*/
+#div_reg {
+	border:1px 
+	solid #CCCCCC; 
+	float: left;
+	width:950px;
+	margin: 15px 0 0px 0;
+	padding:15px 15px 15px 15px;
+}
+
+#table_reg {
+	text-align:center;
+	width:950px;
+}
+
+/*用户登录模块*/
+#div_login {
+	margin: 30px 0 0px 0;
+}
+
+#div_login_leftimg {
+	width:300px;
+	float:left;
+	text-align:right;
+	margin: 0px 30px 0px 0;
+}
+
+#div_login_rightimg {
+	width:300px;
+	float:left;
+	text-align:left;
+	margin: 0px 0 0px 30px;
+}
+
+#div_login_form {
+	float:left;
+	margin: 35px 0 20px 0;
+}
+
+/*销量排行查询*/
+#sale_sql {
+	float:left;
+	width:162px;
+	text-align:left; 
+	padding:8px 10px 5px 10px;
+	border:#A9A9A9 1px dashed;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+
+#sale_sql_img {
+	width:50px;
+	height:50px;
+	float:left;
+	padding-top:6px;
+}
+
+#sale_sql_desc {
+	float:right;
+	width:104px;
+	overflow:hidden; /*超出部分隐藏*/
+	white-space: nowrap; /*强制在同一行显示文本*/
+	margin: 0 0 0 0 8px;
+}
+
+#sale_sql_more {
+	float:left;
+	width:100px;
+	height: 3em;
+	line-height: 3em;
+	overflow: hidden;
+	background-color:#E8F5FB;
+	margin: 10px 41px 0 41px;
+}
+
+/*商品详情*/
+#item_img {
+	float:left;
+	width:300px;
+}
+
+#item_other {
+	float:left;
+	width:385px;
+	line-height:30px;
+	margin: 10px 0 0 50px;
+}
+
+#item_details {
+	float:left;
+	width:738px;
+	margin: 15px 0 0 0;
+}
+
+#item_parameter {
+	float:left;
+	width:725px;
+	line-height:25px;
+	background-color:#F6F6F6;
+	border:1px solid #E6E6E6;
+	margin: 15px 0 0 0;
+}
+
+#item_show_img {
+	float:left;
+	margin: 15px 0 0 0;
+}
+
+/*首页导航样式*/
+.li {
+	float:left;
+	font-size:14px;
+	color:#666666;
+	font-weight:bold;
+	text-decoration:none;
+	width: 100px;
+}
+
+/*商品分类链接样式*/
+.li_sort:link {
+	font-size:14px;
+	color:#696969;
+	font-weight:bold;
+	text-decoration:none;
+}
+.li_sort:visited {
+	font-size:14px;
+	color:#696969;
+	font-weight:bold;
+	text-decoration:none;
+}
+.li_sort:hover {
+	font-size:14px;
+	color:#FF6600;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.li_sort:actived {
+	font-size:14px;
+	color:#696969;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/*热销排行超链接样式*/
+.hot:link {
+	color:black;
+	text-decoration:none;
+}
+.hot:visited {
+	color:black;
+	text-decoration:none;
+}
+.hot:hover {
+	color:black;
+	text-decoration:underline;
+}
+.hot:actived {
+	color:black;
+	text-decoration:none;
+}
+
+/*查看更多商品样式*/
+.sql_more:link {
+	font-size:13px;
+	color:black;
+	text-decoration:none;
+}
+.sql_more:visited {
+	font-size:13px;
+	color:black;
+	text-decoration:none;
+}
+.sql_more:hover {
+	font-size:13px;
+	color:#3895DB;
+	text-decoration:none;
+}
+.sql_more:actived {
+	font-size:13px;
+	color:black;
+	text-decoration:none;
+}
+
+/*商品归类*/
+#sort_main {
+	float: left;
+	width: 738px;
+	margin: 15px 0 0 0;
+}
+
+#sort_product {
+	float: left;
+	width:246px;
+}
+#sort_product ul {
+	color:#7F7F7F;
+	z-index:9999;
+	overflow:hidden;
+}
+#sort_product a img {
+	border:2px solid #FFF;
+}
+#sort_product a:hover img {
+	border:2px solid #F6F6F6;
+}
+#sort_product li {
+	float:left;
+	padding-top:5px;
+	list-style:none;
+	width:226px;
+	overflow:hidden;
+	margin:0 0 0 20px;
+}
+#sort_product .gpic{margin-top:14px;margin-bottom:7px;}
+#sort_product .gbt{text-align:center;height:18px;overflow:hidden;}
+#sort_product .gbt a{color:#7F7F7F;text-decoration:none;overflow:hidden; }
+#sort_product .gprice{text-align:center;overflow:hidden;}
+#sort_product .gsale{text-align:center;overflow:hidden;}
+
+
+/*购物车*/
+#cart_tb {
+	width:90%;
+	background-color:#F1F8FF;
+	text-align:center;
+	padding:10px 0 10px 0;
+	margin:20px auto; 
+}
+
+#cart_tt {
+	float:left;
+	width:90%;
+	text-align:right;
+	margin:20px 50px 20px 0;
+}
+
+#cart_lk {
+	float:left;
+	width:90%;
+	text-align:center;
+	font-size:14px;
+}
+
+#cart_lk a{
+	text-decoration:none;
+	color:#666666;
+}
+
+#cart_lk a:hover{
+	text-decoration:none;
+	color:#000000;
+}
+
+#empty {
+	height:100px;
+	width:300px;
+	background-image:url('../images/empty.png');
+	background-repeat:no-repeat;
+	text-align:right;
+	line-height:2em;
+	color:#404040;
+	padding:20px 0 0 0;
+}
+
+/*分页*/
+#page_next {
+	float:left;
+	width:738px;
+	text-align:right;
+	padding-top:30px;
+}
+
+.pageLink {
+	padding:3px 6px 3px 6px; 
+	border:1px solid #CCCCCC;
+	text-decoration:none;
+}
+.pageLink:link {
+	color:black;
+	text-decoration:none;
+}
+.pageLink:visited {
+	color:black;
+	text-decoration:none;
+}
+.pageLink:hover {
+	color:black;
+	text-decoration:none;
+}
+.pageLink:actived {
+	color:black;
+	text-decoration:none;
+}
+
+
+.zt1{ width:60px;font-size:13px;color:#333333}
+.zt2{ font-size:12px;color:#ff0000}
+hr {border-top:1px dashed #CCCCCC; }
+.input{width:100px;}

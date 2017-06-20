@@ -1,0 +1,72 @@
+body {
+	background-color: white;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	color: #333333;
+	font-size:12px;
+	text-align:center;
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+
+a {
+	font-size:14px;
+	color:#666666;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.zt1{ font-size:12px;color:#333333}
+
+.zt2{width:60;font-size:13px;color:#333333}
+.zt3{ font-size:12px;color:#ff0000}
+
+.input{width:100;height:20}
+.line{line-height:8px;} 
+.a_img{border:0}
+
+#pagebody {
+ width:800px; /*设定宽度*/
+ margin:8px auto; /*居中*/
+}
+#left_login {
+ width:180px; /*设定宽度*/
+ text-align:center; /*文字居住*/
+ float:left; /*浮动居左*/
+ clear:left; /*不允许左侧存在浮动*/
+
+ display:block;  /*此元素将显示为块级元素，此元素前后会带有换行符*/
+}
+#show_img {
+ width:600px;
+ text-align:left;
+ float:right; /*浮动居右*/
+ clear:right; /*不允许右侧存在浮动*/
+ display:block; 
+}
+#left_sort {
+ width:190px; /*设定宽度*/
+ text-align:center; /*文字居住*/
+ float:left; /*浮动居左*/
+ clear:left; /*不允许左侧存在浮动*/
+
+ margin-top:15px;
+}
+#show_product {
+ width:596px;
+ float:right; /*浮动居右*/
+ clear:right; /*不允许右侧存在浮动*/
+ display:hidden; /*超出宽度部分隐藏*/
+ margin-top:10px;
+}
+#select_product {
+ width:298px;
+ text-align:center;
+ display:inline;
+}
+
+#sort {padding:20px 20px 0 0}
+/*利用padding:20px 20px 0 0来固定菜单位置*/
+#sort ul {float:center;list-style:none;margin:0px;}
+/*添加了float:right使得菜单位于页面右侧*/
+#sort ul li {width:150px;height:30px;float:left;margin:0 10px}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">	
+
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+			<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+			<property name="url"  value="jdbc:mysql://localhost/country"/>
+			<property name="username" value="root"/>
+			<property name="password" value=""/>
+	</bean>
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+			<property name="dataSource">
+					<ref bean="dataSource"/>
+			</property>
+			<property name="hibernateProperties">
+				<props>
+					<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+					<prop key="show_sql">true</prop>
+				</props>
+			</property>
+			<property name="mappingResources">
+				<list>
+					<value>com/po/User.hbm.xml</value>
+					<value>com/po/Book.hbm.xml</value>
+					<value>com/po/Audio.hbm.xml</value>
+					<value>com/po/Story.hbm.xml</value>
+					<value>com/po/Picture.hbm.xml</value>
+				</list>
+			</property>
+	</bean>
+	<!--用户页面-->
+	<bean id="userDAO" class="com.dao.UserDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="userService" class="com.service.UserService">
+		<property name="userDAO">
+			<ref bean="userDAO"/>
+		</property>
+	</bean>
+	<bean id="userAction" class="com.action.UserAction" scope="prototype">
+		<property name="userService">
+			<ref bean="userService"/>
+		</property>
+	</bean>
+	<!--推荐书籍页面-->
+	<bean id="bookDAO" class="com.dao.BookDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="bookService" class="com.service.BookService">
+		<property name="bookDAO">
+			<ref bean="bookDAO"/>
+		</property>
+	</bean>
+	<bean id="bookAction" class="com.action.BookAction" scope="prototype">
+		<property name="bookService">
+			<ref bean="bookService"/>
+		</property>
+	</bean>
+	<!--通用的DAO-->
+	<bean name="generalDAO" class="com.dao.GeneralDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<!--音频页面-->
+	<bean id="audioService" class="com.service.AudioService">
+		<property name="generalDAO">
+			<ref bean="generalDAO"/>
+		</property>
+	</bean>
+	<bean id="audioAction" class="com.action.AudioAction" scope="prototype">
+		<property name="audioService">
+			<ref bean="audioService"/>
+		</property>
+	</bean>
+	<!--故事页面-->
+	<bean id="storyService" class="com.service.StoryService">
+		<property name="generalDAO">
+			<ref bean="generalDAO"/>
+		</property>
+	</bean>
+	<bean id="storyAction" class="com.action.StoryAction" scope="prototype">
+		<property name="storyService">
+			<ref bean="storyService"/>
+		</property>
+	</bean>
+	<!--图片页面-->
+	<bean id="pictureService" class="com.service.PictureService">
+		<property name="generalDAO">
+			<ref bean="generalDAO"/>
+		</property>
+	</bean>
+	<bean id="pictureAction" class="com.action.PictureAction" scope="prototype">
+		<property name="pictureService">
+			<ref bean="pictureService"/>
+		</property>
+	</bean>
+</beans>

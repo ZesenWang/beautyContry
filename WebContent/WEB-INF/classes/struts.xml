@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>   
+    <package name="default" extends="struts-default">
+
+        <action name="*User" class="com.action.UserAction" method="{1}">
+            <result name="success">/index.jsp</result>
+            <result name="error">/index.jsp</result>
+            <!--下面这个一定要有，否则会提示找不到相关映射-->
+            <allowed-methods>register,signin,forget</allowed-methods>
+        </action>
+
+        <action name="*Book" class="com.action.BookAction" method="{1}">
+            <result name="uploadSuccess" type="chain">/viewBook.action?curPage=-1</result>
+            <result name="success">/bookShare.jsp</result>
+            <allowed-methods>view,upload</allowed-methods>
+        </action>
+
+        <action name="*Audio" class="com.action.AudioAction" method="{1}">
+            <result name="uploadSuccess" type="chain">/viewAudio.action?curPage=-1</result>
+            <result name="success">/audio.jsp</result>
+            <allowed-methods>view,upload</allowed-methods>
+        </action>
+
+        <action name="*Story" class="com.action.StoryAction" method="{1}">
+            <result name="uploadSuccess" type="chain">/viewStory.action?curPage=-1</result>
+            <result name="success">/UserStoryList.jsp</result>
+            <allowed-methods>view,upload</allowed-methods>
+        </action>
+
+        <action name="*Picture" class="com.action.PictureAction" method="{1}">
+            <result name="uploadSuccess" type="chain">/viewPicture.action?curPage=-1</result>
+            <result name="success">/photoShow1.jsp</result>
+            <allowed-methods>view,upload</allowed-methods>
+        </action>
+    </package>  
+
+</struts>

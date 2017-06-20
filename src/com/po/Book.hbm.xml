@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-19 15:37:13 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.po.Book" table="BOOK">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="bookname" type="java.lang.String">
+            <column name="BOOKNAME" />
+        </property>
+        <property name="author" type="java.lang.String">
+            <column name="AUTHOR" />
+        </property>
+        <property name="publisher" type="java.lang.String">
+            <column name="PUBLISHER" />
+        </property>
+        <property name="publishDate" type="java.lang.String">
+            <column name="PUBLISHDATE" />
+        </property>
+        <property name="profile" type="java.lang.String">
+            <column name="PROFILE" />
+        </property>
+        <property name="cover" type="java.lang.String">
+            <column name="COVER" />
+        </property>
+    </class>
+</hibernate-mapping>
