@@ -13,6 +13,12 @@
             <allowed-methods>register,signin,forget</allowed-methods>
         </action>
 
+        <action name="*Content" class="com.action.ContentAction" method="{1}">
+            <result name="success">/Content.jsp</result>
+            <result name="detailSuccess">/DetailedContent.jsp</result>
+            <allowed-methods>view,detail,like,comment</allowed-methods>
+        </action>
+
         <action name="*Book" class="com.action.BookAction" method="{1}">
             <result name="uploadSuccess" type="chain">/viewBook.action?curPage=-1</result>
             <result name="success">/bookShare.jsp</result>
