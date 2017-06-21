@@ -32,11 +32,6 @@ public class PictureService {
     public List getGalleryData(int reqGallery, int reqPage) {
         String sql = "select imagePath from galleryItems where galleryId = " + reqGallery;
         List list = generalDAO.getDataBySQL(sql);
-//        List result = new ArrayList();
-//        for(int i = 0; i < list.size(); i++) {
-//            Object[] objects = (Object[]) list.get(i);
-//            result.add(objects[0]);
-//        }
         return list;
     }
 }
