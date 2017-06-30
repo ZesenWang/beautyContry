@@ -24,8 +24,8 @@
 <body>
 <!-- 页脚开始-->
 <div class="footer">
-    <p class="text-center" style="color:#FFF">一泓清泉沉淀一段纯粹的临安文化故事</p>
-    <p class="text-center" style="color:#FFF">©2017 Student</p>
+    <p class="text-center" style="color:#FFF;">一泓清泉沉淀一段纯粹的临安文化故事</p>
+    <p class="text-center" style="color:#FFF;">©2017 Student</p>
  </div>
 <!-- 页脚结束-->
 </body>

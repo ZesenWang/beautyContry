@@ -15,7 +15,7 @@
 
 <!-- include alertify script -->
 <script src="alertify.js-0.3.11/lib/alertify.min.js"></script>
-<title>笔墨相处啊</title>
+<title>笔墨相传</title>
 <style type="text/css">
 body{
 	background-image:url(picture/6.jpg);
@@ -68,7 +68,7 @@ $(function (){
 <!-- 导航条 结束-->
 
 <!--好书分享大标题开始-->
- <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:10%;">
+ <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:15px;">
       <h1 style="color:#000;">墨香依旧，笔墨相传</h1>
       <p style="text-indent:80px;"><small style="color: #333;font-size:20px;">书中的临安是否如眼前的泉水般凛冽</small>
       <button type="button" class="btn btn-primary" style="text-indent:0px;opacity:0.8;
@@ -130,18 +130,17 @@ filter:alpha(opacity=40);"id="uploadBookButton">点击上传分享</button>
         for(int i = 0; i < list.size(); i++) {
             Book book = (Book) list.get(i);
     %>
-  <li class="media" style="margin-bottom:100px;">
+ <li class="media" style="margin-bottom:100px;">
     <div class="media-left">
        <a href="#">
-        <img class="media-object img-thumbnail" style="height:120px;width:120px;"src="<%=book.getCover()%>" alt="...">
+       <img src="picture/bookPic/nansongLA.jpg" />
+       <!--   <img class="media-object img-thumbnail" style="height:120px;width:120px;"src="%=book.getCover()%>" alt="...">-->
       </a>
-       <p style="text-align:center; font-size:16px;">清风自来</p>
+       <p style="text-align:center; font-size:16px;">《<%=book.getBookname()%>》</p>
     </div>
     <div class="media-body">
       <h4 class="media-heading">《<%=book.getBookname()%>》</h4>
-<p style="text-indent:50px;min-height:200px; overflow-x:auto">作　　者：<%=book.getAuthor()%> <br />
-出版 社：<%=book.getPublisher()%><br />
-出版时间：<%=book.getPublishDate()%><br />
+<p style="text-indent:50px;min-height:200px; overflow-x:auto">作　　者：<%=book.getAuthor()%> <br />出版 社：<%=book.getPublisher()%><br />出版时间：<%=book.getPublishDate()%><br />
 <%=book.getProfile()%></p>
     </div>
   </li>

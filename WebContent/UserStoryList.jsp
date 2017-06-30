@@ -39,7 +39,7 @@ body{
 <!-- 导航条 结束-->
 
 <!--好书分享大标题开始-->
- <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:10%;">
+ <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:15px;">
       <h1 style="color:#000;">我心中最特别的临安</h1>
       <p style="text-indent:80px;"><small style="color: #333;font-size:20px;">一百个读者有一百个哈姆雷特，一百个人有一百种临安</small>
       <button type="button" class="btn btn-primary" style="text-indent:0px;opacity:0.8;
