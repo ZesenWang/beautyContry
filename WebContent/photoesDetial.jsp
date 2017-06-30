@@ -92,7 +92,7 @@ function openMissPWD(){
 
 <!--用户倡言大标题开始-->
  <div class="page-header col-lg-4 col-lg-offset-4  col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" style="clear:both;margin-top:10%;">
-      <h1 style="color:#000;">临安之———大明山</h1>
+      <h1 style="color:#000;">临安之———<%=request.getAttribute("gallery").toString()%></h1>
 </div>
 <!--用户倡言大标题结束-->
 

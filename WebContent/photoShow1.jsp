@@ -210,9 +210,9 @@ filter:alpha(opacity=40);"id="uploadPhone">点击上传你的分享</button>
             Picture picture = (Picture) list.get(i);
     %>
   <div class="col-sm-12 col-md-5 col-sm-offset-1 p1_box">
-  	<a href="detailPicture.action?reqGallery=<%=picture.getId()%>&reqPage=0">
+  	<a href="detailPicture.action?reqGallery=<%=picture.getId()%>&reqPage=0&gallery=<%=picture.getTouristSpot()%>">
   	<div class="box">
-  		<img src="<%=picture%>" class="img-responsive" alt="Responsive image" style="height:250px; width:100%;">
+  		<img src="<%=picture.getCoverImage()%>" class="img-responsive" alt="Responsive image" style="height:250px; width:100%;">
   		<div class="box-content">
 		<h3 class="title"><%=picture.getTouristSpot()%></h3>
 		<span class="post"><%=picture.getProfile()%></span>

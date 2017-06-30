@@ -26,6 +26,7 @@
 					<value>com/po/Audio.hbm.xml</value>
 					<value>com/po/Story.hbm.xml</value>
 					<value>com/po/Picture.hbm.xml</value>
+					<value>com/po/Content.hbm.xml</value>
 				</list>
 			</property>
 	</bean>
@@ -98,6 +99,17 @@
 	<bean id="pictureAction" class="com.action.PictureAction" scope="prototype">
 		<property name="pictureService">
 			<ref bean="pictureService"/>
+		</property>
+	</bean>
+	<!--第二个页面-->
+	<bean id="contentService" class="com.service.ContentService">
+		<property name="generalDAO">
+			<ref bean="generalDAO"/>
+		</property>
+	</bean>
+	<bean id="contentAction" class="com.action.ContentAction" scope="prototype">
+		<property name="contentService">
+			<ref bean="contentService"/>
 		</property>
 	</bean>
 </beans>

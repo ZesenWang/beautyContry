@@ -14,6 +14,7 @@ public class PictureAction {
     private int curPage;
     private int reqGallery;
     private int reqPage;
+    private String gallery;
 
     public String view(){
         List list = pictureService.getData(curPage);
@@ -29,6 +30,7 @@ public class PictureAction {
         List list = pictureService.getGalleryData(reqGallery, reqPage);
         HttpServletRequest request = ServletActionContext.getRequest();
         request.setAttribute("pictureList", list);
+        request.setAttribute("gallery", gallery);
         return "detailSuccess";
     }
 
@@ -62,5 +64,13 @@ public class PictureAction {
 
     public void setReqPage(int reqPage) {
         this.reqPage = reqPage;
+    }
+
+    public String getGallery() {
+        return gallery;
+    }
+
+    public void setGallery(String gallery) {
+        this.gallery = gallery;
     }
 }
